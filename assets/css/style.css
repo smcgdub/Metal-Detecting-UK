@@ -186,11 +186,11 @@ div.at-container {
 }
 
 /* Background media query */
-@media only screen and (max-width: 575px) {
+/* @media only screen and (max-width: 575px) {
   .advanced_search_bg {
     margin: 0px 5px;
   }
-}
+} */
 
 /* *Getting Permission */
 .bg_getting_permission {
