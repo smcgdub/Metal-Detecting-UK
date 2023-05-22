@@ -252,3 +252,7 @@ div.at-container {
 .search_result_map_img {
   height: 3.2rem;
 }
+
+.search_results_overflow {
+  height: 100vh;
+}
