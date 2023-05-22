@@ -26,3 +26,16 @@ function showPassword() {
     password.type = "password";
   }
 }
+
+// Get current location button 
+function getCurrentLocation() {
+  console.log("getCurrentLocation function started");
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      var positionInfo = `${position.coords.latitude}, ${position.coords.longitude}`;
+      document.getElementById("search_location").value = positionInfo;
+    });
+  } else {
+    alert("Sorry, your browser does not support HTML5 geolocation.");
+  }
+}
