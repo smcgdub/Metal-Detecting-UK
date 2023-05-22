@@ -58,3 +58,14 @@ body {
 .overflow-auto {
   height: 80vh;
 }
+
+/* *Animation root speed */
+:root {
+  --animate-duration: 3s;
+}
+
+/* 4 second fade in */
+.fade_in_ani_4s {
+  animation: fadeIn;
+  animation-duration: 4s !important;
+}
