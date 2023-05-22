@@ -186,3 +186,12 @@ div.at-container {
     margin: 0px 5px;
   }
 }
+
+/* *Disclaimer */
+.bg_disclaimer {
+  /* background-image: url('https://picsum.photos/1920/1080'); */
+  background-image: url(/assets/images/disclaimer_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
