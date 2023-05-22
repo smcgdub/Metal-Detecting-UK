@@ -71,6 +71,209 @@
     </div>
   </div>
 
+  <!-- Background Image -->
+  <div class="bg_advanced_search">
+    <!-- Center the element using flexbox -->
+    <div class="center">
+      <div class="container fade_in_ani_4s">
+        <div class="row">
+          <div class="col-12 advanced_search_bg py-3">
+
+            <!-- Overflow -->
+            <div class="overflow-auto">
+
+              <!-- Advanced Search Heading -->
+              <h1 class="text-white text-center text-capitalize">Advanced Search</h1>
+
+              <!-- Horizontal row -->
+              <hr class="hr_white">
+
+              <!-- Search form -->
+              <form id="advanced_search_form" method="GET"
+                action="https://www.archiuk.com/cgi-bin/archi_new_search_engine.pl" class="form">
+
+                <!-- Hidden search input -->
+                <input name="SearchType" value="freesearch" type="hidden">
+
+                <!-- <input name="search_range" value="10000" type="hidden"> -->
+
+                <!-- Location to search -->
+                <div class="form-group">
+
+                  <!-- <div aria-hidden="true" class="placeholder"> -->
+
+                  <!-- Input box -->
+                  <input id="advanced_current_location_input" class="form-control inputtext text_field"
+                    name="search_location" aria-required="true" placeholder="UK place, postcode or co-ordinates"
+                    aria-label="Your Phone or Email" value="" type="text">
+
+                  <!-- Helper text -->
+                  <small class="text-white">
+                    To find old maps and British archaeological sites, please type in a British Place-Name, Postcode,
+                    Co-ordinate or Country <strong>OR</strong> for your current location, click the <em>Use My Current
+                      Location</em> button below and press <strong>Search.</strong>
+                  </small>
+
+                  <!-- </div> -->
+                </div>
+
+                <!-- Horizontal row -->
+                <hr class="hr_white">
+
+                <!-- Area to search within text -->
+                <p class="mb-1 text-white">
+                  Area to search within:
+                </p>
+
+                <!-- Search Radius -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="search_range" value="3000" id="3_km_range">
+                  <label class="mb-0 text-white" for="3_km_range">3km</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input mr-3" type="radio" name="search_range" value="5000" id="5_km_range">
+                  <label class="mb-0 text-white" for="5_km_range">5km</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input mr-3" type="radio" name="search_range" value="10000" id="10_km_range">
+                  <label class="mb-0 text-white" for="10_km_range">10km</label>
+                </div>
+
+                <!-- Anchor Tag -->
+                <hr class="hr_white">
+
+                <!-- Period buttons -->
+                <p class="mb-1 mt-3 text-white">
+                  <strong>Period (Optional)</strong>
+                </p>
+
+                <!-- All periods
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="period" id="all_periods" value="all_periods">
+              <label class="form-check-label text-white" for="inlineRadio2">All periods</label>
+            </div> 
+      
+       -->
+                <!-- Bronze Age -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="bronze_age" value="bronze_age">
+                  <label class="form-check-label text-white" for="bronze_age">Bronze Age</label>
+                </div>
+
+                <!-- Iron age / Celtic -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="iron_age" value="iron_age">
+                  <label class="form-check-label text-white" for="iron_age">Iron Age / Celtic</label>
+                </div>
+
+                <!-- Roman -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="roman" value="roman">
+                  <label class="form-check-label text-white" for="roman">Roman</label>
+                </div>
+
+                <!-- Saxon / Early Medieval -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="saxon" value="saxon">
+                  <label class="form-check-label text-white" for="saxon">Saxon / Early Medieval</label>
+                </div>
+
+                <!-- Medieval -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="medieval" value="medieval">
+                  <label class="form-check-label text-white" for="medieval">Medieval</label>
+                </div>
+
+                <!-- Post Medieval -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="post-medieval" value="post-medieval">
+                  <label class="form-check-label text-white" for="post-medieval">Post Medieval</label>
+                </div>
+
+                <!-- Neolithic -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="neolithic" value="neolithic">
+                  <label class="form-check-label text-white" for="neolithic">Neolithic</label>
+                </div>
+
+                <!-- Mesolithic -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="mesolithic" value="mesolithic">
+                  <label class="form-check-label text-white" for="mesolithic">Mesolithic</label>
+                </div>
+
+                <!-- Paleolithic -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="period" id="paleolithic" value="paleolithic">
+                  <label class="form-check-label text-white" for="paleolithic">Paleolithic</label>
+                </div>
+
+                <!-- Anchor Tag -->
+                <hr class="hr_white">
+
+                <!-- Keywords -->
+                <div class="form-group">
+                  <label class="mb-0 text-white" for="advanced_search_keywords">Keywords (Optional)</label>
+                  <input type="text" class="form-control" id="advanced_search_keywords" name="keywords"
+                    aria-required="true" placeholder="Enter keywords (Optional)">
+                </div>
+
+                <!-- Horizontal row -->
+                <hr class="hr_white">
+
+                <!-- Password -->
+                <div class="form-group">
+                  <label class="mb-0 text-white">Password</label>
+
+                  <!-- Helper text -->
+                  <small id="password_help" class="form-text text-white mt-0">
+                    <b>Non-members</b> leave blank. <b>Members</b> enter password to view site GPS co-ordinates &amp;
+                    additional maps
+                  </small>
+
+                  <div class="input-group mb-1">
+                    <!-- Password input field -->
+                    <input id="pwd" class="form-control" type="password" name="pwd"
+                      placeholder="Member Password or Leave Blank" value="">
+                    <!-- Show password Button -->
+                    <span class="input-group-text" id="basic-addon2">
+                      <i class="fas fa-eye" onclick="showPassword()"></i>
+                    </span>
+                  </div>
+
+                  <!-- Forgot password link -->
+                  <small id="password_reset" class="form-text">
+                    <a class="text-white" href="https://www.archiuk.com/cgi-bin/get_lost_pwd.pl"
+                      target="_blank">Forgotten
+                      Password?</a>
+                  </small>
+
+                </div>
+
+                <!-- Search button -->
+                <button id="advanced_search_button" type="submit" class="btn mr-2" value="search">Search</button>
+
+                <!-- Use current location button -->
+                <button id="get_current_location_button" class="btn my-2" type="button"
+                  onclick="getCurrentLocationAdvancedSearch();">Use My Current Location
+                </button>
+
+                <!-- Line break -->
+                <br>
+
+                <!-- Helper text -->
+                <small id="search_location_help" class="form-text text-white">
+                  <em>It may take a few seconds for your location to appear in the field above</em>
+                </small>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scroll to top button -->
   <button onclick="topFunction()" id="topButton" title="Go to top" class="generic_gold">
     <i class="fas fa-angle-double-up"></i>
