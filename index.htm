@@ -55,6 +55,104 @@
     </div>
   </nav>
 
+  <!-- Background Image -->
+  <div class="bg">
+    <!-- Center the element using flexbox -->
+    <div class="center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 fade_in_ani_4s">
+
+            <h1 class="text-white text-center text-capitalize">Metal detecting UK</h1>
+            <!-- Horizontal row -->
+            <hr class="hr_white">
+
+            <!-- Search form -->
+            <form id="homepage_search_form" class="form">
+
+              <!-- Form header -->
+              <h3 class="pl-1 text-capitalize text-white mb-3">Start your research today
+              </h3>
+
+              <!-- Search location -->
+              <div class="form-group">
+
+                <!-- Search location input -->
+                <input class="form-control" id="search_location" placeholder="UK Place, Postcode or Co-ordinate"
+                  value="">
+
+                <!-- Search location helper text -->
+                <p class="text-white">Type UK Place, Postcode, Country or Co-ordinate. Or
+                  <a class="text-white" href="https://www.archiuk.com/index_form.htm" class="text-white">
+                    Advanced Search
+                  </a>
+                  <!-- <a class="text-white" href="https://www.archiuk.com/archi/archaeological_sites_in_britain_map.htm"
+                      class="text-white">Interactive Map</a> -->
+                </p>
+
+              </div>
+
+              <br>
+              <!-- Password section -->
+              <div class="form-group">
+
+                <!-- <p class="text-white mb-0 legislation_text_bg">Password: <b>Non-members</b> leave blank. <b>Members</b>
+                    enter password to view site GPS co-ordinates additional maps
+                  </p> -->
+
+                <!-- Password input field -->
+                <div class="input-group mb-0">
+                  <div class="input-group mb-0">
+
+                    <!-- Password input field -->
+                    <input id="pwd" class="form-control" type="password" placeholder="Member Password or Leave Blank"
+                      value="">
+
+                    <!-- Show password Button -->
+                    <span class="input-group-text" id="basic-addon2">
+                      <i class="fas fa-eye" onclick="showPassword()"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <p class="text-white mb-0 ">Password: <b>Non-members</b> leave blank.
+                  <b>Members</b>
+                  enter password to view site GPS co-ordinates additional maps
+                </p>
+
+                <br>
+
+                <!-- Forgot password link -->
+                <p class="mb-0">
+                  <a class="text-white text-decoration-none" href="https://www.archiuk.com/cgi-bin/get_lost_pwd.pl"
+                    target="_blank">Forgotten
+                    Password?</a>
+                </p>
+
+
+                <!-- <small id="password_reset" class="form-text text-white">
+                    <a class="text-white text-decoration-none" href="https://www.archiuk.com/cgi-bin/get_lost_pwd.pl"
+                      target="_blank">Forgotten
+                      Password?</a>
+                  </small> -->
+              </div>
+
+              <!-- Search button -->
+              <button id="archi_search_button" type="button" class="btn mr-2" onclick="callArchiSearch()">Search
+              </button>
+
+              <!-- Get current location -->
+              <button id="get_current_location_button" class="btn my-2" type="button"
+                onclick="getCurrentLocation();">Use My Current Location<br>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

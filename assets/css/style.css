@@ -69,3 +69,83 @@ body {
   animation: fadeIn;
   animation-duration: 4s !important;
 }
+
+/* *Breadcrumb */
+.breadcrumb {
+  z-index: 1;
+  position: absolute;
+}
+
+/* *Navbar */
+.navbar-brand {
+  color: #000000a6;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+/* *Index Page */
+.bg {
+  /* background-image: url('https://picsum.photos/1920/1080'); */
+  background-image: url(/assets/images/index_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Center element using flexbox */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* height: calc(100vh - 5%); */
+}
+
+#get_current_location_button,
+#archi_search_button,
+#advanced_search_button {
+  background-color: #ffffff;
+  color: #000000a6;
+}
+
+#get_current_location_button:hover,
+#archi_search_button:hover,
+#advanced_search_button:hover {
+  background-color: #000000a6;
+  color: #ffffff;
+}
+
+/* Style the button */
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 4px 10px 0px 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* #topButton:hover {
+  background-color: #444;
+} */
+
+/* Animation effect header text */
+div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
