@@ -1,0 +1,60 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+/* *Global */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.generic_green {
+  color: rgb(119, 165, 66);
+}
+
+.generic_green_bg {
+  background-color: rgb(119, 165, 66);
+}
+
+.generic_gold {
+  color: rgb(220, 215, 123) !important;
+}
+
+.generic_gold_bg {
+  background-color: rgb(220, 215, 123) !important;
+}
+
+.generic_blue {
+  color: rgb(95, 183, 255);
+}
+
+.generic_blue_bg {
+  background-color: rgb(95, 183, 255);
+}
+
+.generic_silver {
+  color: rgb(192, 192, 192);
+}
+
+.generic_silver_bg {
+  background-color: rgb(192, 192, 192);
+}
+
+.generic_black {
+  color: #000000a6;
+}
+
+.generic_black_bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.hr_white {
+  color: #ffffff !important;
+}
+
+.overflow-auto {
+  height: 80vh;
+}
