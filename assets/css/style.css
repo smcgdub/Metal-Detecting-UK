@@ -170,3 +170,19 @@ div.at-container {
     margin: 0px 5px;
   }
 }
+
+/* *Getting Permission */
+.bg_getting_permission {
+  /* background-image: url('https://picsum.photos/1920/1080'); */
+  background-image: url(/assets/images/getting_permission.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Background media query */
+@media only screen and (max-width: 575px) {
+  .generic_black_bg {
+    margin: 0px 5px;
+  }
+}
