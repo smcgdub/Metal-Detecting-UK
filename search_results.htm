@@ -353,111 +353,175 @@
           <h4 class="search_results_banner_bg text-center text-white px-2 py-2">Search Results Below</h4>
 
           <!-- Search results banner -->
-          <h6 class="mb-1 search_results_banner">List of results that match your search</h6>
+          <h6 class="mb-3 search_results_banner">List of results that match your search</h6>
 
-          <!-- Line break -->
-          <br>
+          <!-- Search results template 1 -->
+          <div id="search_results_template" class="div">
+            <p class="mb-0">Site Number: <span class="text-danger">{{ Insert Site Number }}</span></p>
+            <p class="mb-0">Site Description: <span class="text-danger">{{ Insert Site Description }}</span></p>
+            <p class="mb-0">Period: <span class="text-danger">{{ Insert Period }}</span></p>
+            <p class="mb-0">Distance and Direction from your Search Location: <span
+                class="text-danger">{{ Insert Distance }}</span></p>
+            <p class="mb-0">GPS Location of this Archaeological / Historical site's of this location: <span
+                class="text-danger">{{ Insert GPS }}</span></p>
+
+            <!-- Accordian -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- Accordian item 1 -->
+              <div class="accordion-item">
+                <!-- Accordian header & open/collapse button -->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Road, Aerial Maps showing this Archaeological / Historical site's location:
+                  </button>
+                </h2>
+
+                <!-- Accordian body -->
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body ps-0">
+
+                    <p class="mb-0">
+                      View ARCHI SuperMap Layered Aerial Photography and Historic Maps showing this Archaeological /
+                      Historical site's location: <a href="">Archi Supermap</a>
+                    </p>
+
+                    <p class="mb-0">
+                      View Modern Map and Aerial Photograph showing this Archaeological / Historical site's location: <a
+                        href="">View Modern Map and Aerial Photograph</a>
+                    </p>
+
+                    <p class="mb-0">
+                      View Site LiDAR Terrain Images showing this Archaeological / Historical site's location: <a
+                        href="">View LiDAR Terrain Images</a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordian item 2 -->
+              <div class="accordion-item">
+                <!-- Accordian header & open/collapse button -->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Old Ordnance Survey Maps showing this Archaeological / Historical site's location:
+                  </button>
+                </h2>
+
+                <!-- Accordian body -->
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body ps-0">
+
+                    <p class="mb-0">
+                      1888-1913: View Detailed Old Victorian Ordnance Survey Map 6 inch to 1 mile showing this site: <a
+                        href="">Detailed Old Victorian Ordnance Survey Map 6 inch to 1 mile</a>
+                    </p>
+
+                    <p class="mb-0">
+                      1805-1845: View Old Georgian / Victorian Ordnance Survey Map 1 inch to 1 mile showing this site:
+                      <a href="">Early Ordnance Survey Map 1 inch to 1 mile</a>
+                    </p>
+
+                    <p class="mb-0">
+                      1955-1961: View Ordnance Survey Map 1 inch to 1 mile showing this site: <a href="">Ordnance Survey
+                        Map 1 inch to 1 mile</a>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Horizontal row -->
+          <hr>
 
           <!-- Search results template -->
           <div id="search_results_template" class="div">
-            <p class="mb-1">Type of site: <span class="text-danger">Magnet Fishing</span></p>
-            <p class="mb-1">Site Description: <span class="text-danger">Potential Magnet Fishing Hotspot Canal Bridge
-                Bridge 13, Silver Hill Bridge, Little Lever, Greater Manchester</span> </p>
-            <p class="mb-1">Distance and Direction from your Search Location: <span class="text-danger">11.3 km
-                N-E</span> </p>
-            <p class="mb-1">GPS Location of this Archaeological / Historical site's of this location: <span><a href=""
-                  class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">View Layered Lidar / Aerial Photography and 19th Century Maps of this Archaeological /
-              Historical site's location: <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">View Modern Map and Aerial Photograph of this Archaeological / Historical site's location:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">View Site LiDAR Terrain Images of this Archaeological / Historical site's location:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">Old Ordnance Survey Maps of this Archaeological / Historical site's location: <span><a
-                  href="" class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">1888-1913: View Detailed Old Victorian Ordnance Survey Map 6 inch to 1 mile of this site:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">1955-1961: View Ordnance Survey Map 1 inch to 1 mile of this site: <span><a href=""
-                  class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">1805-1845: View Old Georgian / Victorian Ordnance Survey Map 1 inch to 1 mile of this
-              site:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p>Update added: <span class="text-danger">April 2021</span></p>
+            <p class="mb-0">Site Number: <span class="text-danger">{{ Insert Site Number }}</span></p>
+            <p class="mb-0">Site Description: <span class="text-danger">{{ Insert Site Description }}</span></p>
+            <p class="mb-0">Period: <span class="text-danger">{{ Insert Period }}</span></p>
+            <p class="mb-0">Distance and Direction from your Search Location: <span
+                class="text-danger">{{ Insert Distance }}</span></p>
+            <p class="mb-0">GPS Location of this Archaeological / Historical site's of this location: <span
+                class="text-danger">{{ Insert GPS }}</span></p>
 
-            <!-- Horizontal line -->
-            <hr>
+            <!-- Accordian -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- Accordian item 3 -->
+              <div class="accordion-item">
+                <!-- Accordian header & open/collapse button -->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Road, Aerial Maps showing this Archaeological / Historical site's location:
+                  </button>
+                </h2>
+
+                <!-- Accordian body -->
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body ps-0">
+
+                    <p class="mb-0">
+                      View ARCHI SuperMap Layered Aerial Photography and Historic Maps showing this Archaeological /
+                      Historical site's location: <a href="">Archi Supermap</a>
+                    </p>
+
+                    <p class="mb-0">
+                      View Modern Map and Aerial Photograph showing this Archaeological / Historical site's location: <a
+                        href="">View Modern Map and Aerial Photograph</a>
+                    </p>
+
+                    <p class="mb-0">
+                      View Site LiDAR Terrain Images showing this Archaeological / Historical site's location: <a
+                        href="">View LiDAR Terrain Images</a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordian item 4 -->
+              <div class="accordion-item">
+                <!-- Accordian header & open/collapse button -->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Old Ordnance Survey Maps showing this Archaeological / Historical site's location:
+                  </button>
+                </h2>
+
+                <!-- Accordian body -->
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body ps-0">
+
+                    <p class="mb-0">
+                      1888-1913: View Detailed Old Victorian Ordnance Survey Map 6 inch to 1 mile showing this site: <a
+                        href="">Detailed Old Victorian Ordnance Survey Map 6 inch to 1 mile</a>
+                    </p>
+
+                    <p class="mb-0">
+                      1805-1845: View Old Georgian / Victorian Ordnance Survey Map 1 inch to 1 mile showing this site:
+                      <a href="">Early Ordnance Survey Map 1 inch to 1 mile</a>
+                    </p>
+
+                    <p class="mb-0">
+                      1955-1961: View Ordnance Survey Map 1 inch to 1 mile showing this site: <a href="">Ordnance Survey
+                        Map 1 inch to 1 mile</a>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
 
-          <div id="search_results_template" class="div">
-            <p class="mb-1">Type of site: <span class="text-danger">Magnet Fishing</span></p>
-            <p class="mb-1">Site Description: <span class="text-danger">Potential Magnet Fishing Hotspot Canal Bridge
-                Bridge 13, Silver Hill Bridge, Little Lever, Greater Manchester</span> </p>
-            <p class="mb-1">Distance and Direction from your Search Location: <span class="text-danger">11.3 km
-                N-E</span> </p>
-            <p class="mb-1">GPS Location of this Archaeological / Historical site's of this location: <span><a href=""
-                  class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">View Layered Lidar / Aerial Photography and 19th Century Maps of this Archaeological /
-              Historical site's location: <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">View Modern Map and Aerial Photograph of this Archaeological / Historical site's location:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">View Site LiDAR Terrain Images of this Archaeological / Historical site's location:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">Old Ordnance Survey Maps of this Archaeological / Historical site's location: <span><a
-                  href="" class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">1888-1913: View Detailed Old Victorian Ordnance Survey Map 6 inch to 1 mile of this site:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">1955-1961: View Ordnance Survey Map 1 inch to 1 mile of this site: <span><a href=""
-                  class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">1805-1845: View Old Georgian / Victorian Ordnance Survey Map 1 inch to 1 mile of this
-              site:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p>Update added: <span class="text-danger">April 2021</span></p>
-
-            <!-- Horizontal line -->
-            <hr>
-          </div>
-
-          <!-- ! Be sure to delete the ID's in the template and the one above as we have id duplication when testing -->
-          <div id="search_results_template" class="div">
-            <p class="mb-1">Type of site: <span class="text-danger">Magnet Fishing</span></p>
-            <p class="mb-1">Site Description: <span class="text-danger">Potential Magnet Fishing Hotspot Canal Bridge
-                Bridge 13, Silver Hill Bridge, Little Lever, Greater Manchester</span> </p>
-            <p class="mb-1">Distance and Direction from your Search Location: <span class="text-danger">11.3 km
-                N-E</span> </p>
-            <p class="mb-1">GPS Location of this Archaeological / Historical site's of this location: <span><a href=""
-                  class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">View Layered Lidar / Aerial Photography and 19th Century Maps of this Archaeological /
-              Historical site's location: <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">View Modern Map and Aerial Photograph of this Archaeological / Historical site's location:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">View Site LiDAR Terrain Images of this Archaeological / Historical site's location:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">Old Ordnance Survey Maps of this Archaeological / Historical site's location: <span><a
-                  href="" class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">1888-1913: View Detailed Old Victorian Ordnance Survey Map 6 inch to 1 mile of this site:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p class="mb-1">1955-1961: View Ordnance Survey Map 1 inch to 1 mile of this site: <span><a href=""
-                  class="text-danger search_results_link">[Upgrade]</a></span></p>
-            <p class="mb-1">1805-1845: View Old Georgian / Victorian Ordnance Survey Map 1 inch to 1 mile of this
-              site:
-              <span><a href="" class="text-danger search_results_link">[Upgrade]</a></span>
-            </p>
-            <p>Update added: <span class="text-danger">April 2021</span></p>
-
-            <!-- Horizontal line -->
-            <hr>
-          </div>
+          <!-- Horizontal row -->
+          <hr>
 
         </div>
       </div>

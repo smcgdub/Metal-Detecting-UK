@@ -67,6 +67,10 @@ body {
   height: 80vh;
 }
 
+.accordion-button {
+  font-size: 18px;
+}
+
 /* *Animation root speed */
 :root {
   --animate-duration: 3s;
@@ -263,4 +267,9 @@ div.at-container {
 
 .search_results_overflow {
   height: 100vh;
+}
+
+.accordion-button {
+  background-color: #dfe0e1;
+  margin-bottom: 2px;
 }
