@@ -104,7 +104,7 @@ button.navbar-toggler {
 /* *Index Page */
 .bg {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(/assets/images/index_bg.jpg);
+  background-image: url(assets/images/index_bg.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -165,7 +165,7 @@ div.at-container {
 /* *About us */
 .bg_about_us {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(/assets/images/about_us_bg.jpg);
+  background-image: url(assets/images/about_us_bg.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -186,7 +186,7 @@ div.at-container {
 /* *Advanced Search */
 .bg_advanced_search {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(/assets/images/advanced_search_bg.jpg);
+  background-image: url(assets/images/advanced_search_bg.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -207,7 +207,7 @@ div.at-container {
 /* *Getting Permission */
 .bg_getting_permission {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(/assets/images/getting_permission.jpg);
+  background-image: url(assets/images/getting_permission.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -223,7 +223,7 @@ div.at-container {
 /* *Disclaimer */
 .bg_disclaimer {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(/assets/images/disclaimer_bg.jpg);
+  background-image: url(assets/images/disclaimer_bg.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -232,7 +232,7 @@ div.at-container {
 /* *Legislation */
 .bg_legislation {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(/assets/images/legislation_bg.jpg);
+  background-image: url(assets/images/legislation_bg.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
