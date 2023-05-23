@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+.generic_off_white_bg {
+  background-color: #f8f9fa;
+}
+
 .generic_green {
   color: rgb(119, 165, 66);
 }
@@ -110,7 +114,7 @@ button.navbar-toggler {
 #get_current_location_button,
 #archi_search_button,
 #advanced_search_button {
-  background-color: #ffffff;
+  background-color: #f8f9fa;
   color: #000000a6;
 }
 
