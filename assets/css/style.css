@@ -288,3 +288,15 @@ div.at-container {
   border-radius: 5px;
   height: 90vh;
 }
+
+
+
+.scrollable-content::-webkit-scrollbar {
+  width: 5px;
+  /* background-color: #f8f9fa; */
+  background-color: #000000a6;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #f8f9fa;
+}

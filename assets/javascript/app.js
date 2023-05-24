@@ -69,3 +69,13 @@ function callArchiSearch() {
     // "https://www.archiuk.com/placenames"
   );
 }
+
+// Load monthly subscription page
+function chooseMonthlyPlan() {
+  window.open("subscribe_m.htm", "_self");
+}
+
+// Load annual subscription page
+function chooseYearlyPlan() {
+  window.open("subscribe_y.htm", "_self");
+}
