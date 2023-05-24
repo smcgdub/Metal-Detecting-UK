@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/89d5bab957.js" crossorigin="anonymous"></script>
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Page title -->
+  <title>Metal Detecting UK | Subscription</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.htm">MDUK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Navbar menu button mobile -->
+        <i class="fas fa-ellipsis-h py-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link ms-auto active" aria-current="page" href="about_us.htm">About Us</a>
+          <a class="nav-link ms-auto" href="advanced_search.htm">Advanced Search</a>
+          <a class="nav-link ms-auto" href="getting_permission.htm">Getting Permission</a>
+          <a class="nav-link ms-auto" href="">Tips & Tricks</a>
+          <a class="nav-link ms-auto" href="">Gallery</a>
+          <!-- Dropdown Menu -->
+          <li class="nav-item dropdown ms-auto">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Legal & F.A.Q
+            </a>
+            <!-- Dropdown list -->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item ms-auto" href="disclaimer.htm">Disclaimer</a></li>
+              <li><a class="dropdown-item ms-auto" href="legislation.htm">Legislation</a></li>
+              <li><a class="dropdown-item ms-auto" href="treasure_act_1996.htm">Treasure Act 1996</a></li>
+            </ul>
+          </li>
+          <a class="nav-link ms-auto" href="subscribe_m.htm">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <ol class="breadcrumb mt-1 mb-1">
+          <li class="breadcrumb-item"><a class="text-white" href="index.htm">Home</a></li>
+          <li class="breadcrumb-item text-white active" aria-current="page">Subscribe</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background image -->
+  <div class="bg_subscribe">
+    <div class="center">
+
+      <!-- Line break -->
+      <br>
+
+      <!-- Subscribe content -->
+      <div class="container">
+        <div class="row">
+          <div class="col text-white">
+
+            <!-- Overflow -->
+            <div class="overflow-auto px-3 subscribe_bg">
+
+              <!-- Subscribe Header -->
+              <h1 class="text-center mt-3">Subscribe</h1>
+              <!-- Horizontal Line -->
+              <hr class="">
+              <h4 class=" text-decoration-underline">Choose Your Membership:</h4>
+              <!-- Yearly or monthly subscription selection -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Monthly Membership: £5.00 plus VAT per month
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                  onclick="chooseYearlyPlan()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Choose yearly membership plan: £25.00 plus VAT - (58% discount vs monthly membership)
+                </label>
+              </div>
+
+              <!-- Horizontal Line -->
+              <hr class="">
+
+              <!-- Subscription message -->
+              <div class="row">
+                <div class="col">
+                  <h4 class="">Subscriptions are handled through PayPal:</h4>
+                  <p class="mb-3 generic_red">
+                    <strong>Important note</strong>: Please be aware that you may experience a short delay (up to
+                    10 seconds) upon completion of the paypal checkout before you are directed to the Metal Detecting UK
+                    member password setup page.
+                  </p>
+                  <p class="mb-0">
+                    Once you have completed paypal's checkout please wait until you are re-directed
+                    to the Metal Detecting UK member password setup page to set your password.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Horizontal Line -->
+              <hr class="">
+
+              <!-- Order Summary Section -->
+              <div class="row">
+                <div class="col-12">
+                  <h4 class="text-decoration-underline">Your order</h4>
+                  <table class="table text-white">
+                    <thead class="subscribe_th">
+                      <tr>
+                        <th class="">Product</th>
+                        <th class="">Price</th>
+                        <th class="">VAT (20%)</th>
+                        <th class="">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="">
+                        <th class="">1x Metal Detecting UK monthly subscription (<em class="small">Recurring
+                            billing</em>):</th>
+                        <td class="generic_red">£5.00</td>
+                        <td class="generic_red">£1.00</td>
+                        <td class="generic_red">£6.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Paypal subscribe button -->
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="text-left">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="NUMKDUJV7C8XS">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_subscribeCC_LG.gif"
+                      name="submit" alt="PayPal The safer, easier way to pay online!">
+                    <img alt="" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+                </div>
+              </div>
+              <!-- Horizontal Line -->
+              <hr class="">
+              <!-- Auto-renewal notice -->
+              <p class="mb-2 text-decoration-underline">Subscription Auto Renewal</p>
+              <!-- Auto renewal message -->
+              <p class="fst-italic mb-2">
+                Subscriptions to Metal Detecting UK are for one month and will be renewed
+                automatically. Most Metal Detecting UK subscribers prefer this than to find their subscription has
+                expired when they are out in the field and need to use the service. However, you can simply cancel any
+                future re-subscription payments via your PayPal account anytime before the next subscription period.
+              </p>
+              <p class="fst-italic mb-2">
+                For instructions on how to cancel your subscription please see our F.A.Q page or click: <a
+                  href="archi_support_page_mobile.html" class="generic_red">here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to top button -->
+  <button onclick="topFunction()" id="topButton" title="Go to top" class="generic_off_white">
+    <i class="fas fa-angle-double-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <!-- Footer paragraph col -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <!-- Footer header -->
+          <h5 class="text-uppercase">Metal Detecting UK</h5>
+          <!-- Footer paragraph -->
+          <p>
+            Are you fascinated by the hidden history and treasures that lie beneath the soil? Do you enjoy exploring
+            the outdoors with a metal detector in hand? If so, you have come to the right place. Welcome to Metal
+            Detecting UK
+          </p>
+        </div>
+        <!-- Useful links col 1 -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <!-- Useful links header -->
+          <h5 class="text-uppercase">Useful Links</h5>
+          <!-- Useful links list -->
+          <ul class="list-unstyled mb-0">
+            <li><a href="about_us.htm" class="text-dark text-decoration-none">About Us</a></li>
+            <li><a href="advanced_search.htm" class="text-dark text-decoration-none">Advanced Search</a></li>
+            <li><a href="" class="text-dark text-decoration-none">Tips & Tricks</a></li>
+            <li><a href="" class="text-dark text-decoration-none">Gallery</a></li>
+          </ul>
+        </div>
+        <!-- Useful links col 2 -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <!-- Useful links header -->
+          <h5 class="text-uppercase">Legal</h5>
+          <!-- Legal links list -->
+          <ul class="list-unstyled">
+            <li><a href="getting_permission.htm" class="text-dark text-decoration-none">Getting Permission</a></li>
+            <li><a href="disclaimer.htm" class="text-dark text-decoration-none">Disclaimer</a></li>
+            <li><a href="legislation.htm" class="text-dark text-decoration-none">Legislation</a></li>
+            <li><a href="treasure_act_1996.htm" class="text-dark text-decoration-none">Treasure Act 1996</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
+  <!-- Custom JS -->
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

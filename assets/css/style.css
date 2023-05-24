@@ -273,3 +273,18 @@ div.at-container {
   background-color: #dfe0e1;
   margin-bottom: 2px;
 }
+
+/* *Subscribe */
+.bg_subscribe {
+  /* background-image: url('https://picsum.photos/1920/1080'); */
+  background-image: url(../images/subscribe_bg.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.subscribe_bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  height: 90vh;
+}
