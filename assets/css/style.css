@@ -104,7 +104,7 @@ button.navbar-toggler {
 /* *Index Page */
 .bg {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(../images/index_bg.jpg);
+  background-image: url(../images/index_bg.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
