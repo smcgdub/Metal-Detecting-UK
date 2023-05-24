@@ -4,7 +4,7 @@
 /* *Global */
 body {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
+  font-size: 18px !important;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -165,7 +165,7 @@ div.at-container {
 /* *About us */
 .bg_about_us {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(../images/about_us_bg.jpg);
+  background-image: url(../images/about_us_bg.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -186,7 +186,7 @@ div.at-container {
 /* *Advanced Search */
 .bg_advanced_search {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(../images/advanced_search_bg.jpg);
+  background-image: url(../images/advanced_search_bg.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -207,7 +207,7 @@ div.at-container {
 /* *Getting Permission */
 .bg_getting_permission {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(../images/getting_permission.jpg);
+  background-image: url(../images/getting_permission.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -223,7 +223,7 @@ div.at-container {
 /* *Disclaimer */
 .bg_disclaimer {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(../images/disclaimer_bg.jpg);
+  background-image: url(../images/disclaimer_bg.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -232,7 +232,7 @@ div.at-container {
 /* *Legislation */
 .bg_legislation {
   /* background-image: url('https://picsum.photos/1920/1080'); */
-  background-image: url(../images/legislation_bg.jpg);
+  background-image: url(../images/legislation_bg.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
