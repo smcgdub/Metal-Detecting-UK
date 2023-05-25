@@ -352,3 +352,16 @@ div.at-container {
   /* Safari 3-8 */
   transform: scale(1.03);
 }
+
+/* *FAQ */
+.bg_faq {
+  /* background-image: url('https://picsum.photos/1920/1080'); */
+  background-image: url(../images/faq_bg.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.card-body {
+  background-color: rgba(0, 0, 0, 0.5);
+}
