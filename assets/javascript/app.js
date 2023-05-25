@@ -1,3 +1,5 @@
+// *Scroll to top button 
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction()
@@ -17,7 +19,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// Show/hide password button 
+// *Show/hide password button 
 function showPassword() {
   let password = document.getElementById("pwd");
   if (password.type === "password") {
@@ -27,7 +29,7 @@ function showPassword() {
   }
 }
 
-// Get current location button 
+// *Get current location button 
 function getCurrentLocation() {
   console.log("getCurrentLocation function started");
   if (navigator.geolocation) {
@@ -40,6 +42,19 @@ function getCurrentLocation() {
   }
 }
 
+// *Get users current location advanced search
+function getCurrentLocationAdvancedSearch() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      var positionInfo = `${position.coords.latitude}, ${position.coords.longitude}`;
+      document.getElementById("advanced_current_location_input").value = positionInfo;
+    });
+  } else {
+    alert("Sorry, your browser does not support HTML5 geolocation.");
+  }
+}
+
+// *Perform Archi search function
 function callArchiSearch() {
 
   // countryLat = document.getElementById('lat').value;
@@ -70,6 +85,7 @@ function callArchiSearch() {
   );
 }
 
+// *Switch between yearly and monthly subscription plans
 // Load monthly subscription page
 function chooseMonthlyPlan() {
   window.open("subscribe_m.htm", "_self");
